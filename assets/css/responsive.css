@@ -1,0 +1,200 @@
+/* Start Responsive A Side Bar In Mobile */
+
+@media (max-width: 767px) {
+  .sidebar {
+    width: 58px;
+    padding: 10px;
+  }
+  .sidebar .logo {
+    font-size: 13px;
+  }
+  .sidebar .logo::before,
+  .sidebar .logo::after {
+    display: none;
+  }
+  .sidebar ul li > a span {
+    display: none;
+  }
+}
+/* End Responsive A Side Bar In Mobile */
+
+/* Start Responsive Wrapper in Mobile */
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* End Responsive Wrapper in Mobile */
+
+/* Start Responsive Welcome in Mobile */
+
+@media (max-width: 767px) {
+  .wrapper .welcome {
+    text-align: center;
+  }
+  .wrapper .welcome .intro {
+    padding-bottom: 30px;
+  }
+  .wrapper .body {
+    display: block;
+  }
+  .wrapper .body > div {
+    margin-bottom: 20px;
+  }
+  .wrapper .intro .image {
+    display: none;
+  }
+}
+
+/* Start Responsive quicks Draft in Mobile */
+
+@media (max-width: 767px) {
+  .wrapper .quick-draft form input[type="submit"] {
+    margin: 0 0 15px auto;
+  }
+}
+
+/* End Responsive quicks Draft in Mobile */
+/* Start Responsive Tikects Draft in Mobile */
+
+@media (max-width: 767px) {
+  .tickets .box-content .box {
+    flex-basis: 100%;
+  }
+}
+/* End Responsive Tikects Draft in Mobile */
+
+/* Start Responsive latest News in mobile */
+@media (max-width: 767px) {
+  .latest-news h2 {
+    text-align: center;
+  }
+  .latest-news .news-row {
+    flex-direction: column;
+  }
+}
+
+/* End Responsive latest News in mobile */
+/* Start Responsive latest Projects in mobile */
+@media (max-width: 767px) {
+  .last-project .lanch-icon {
+    display: none;
+  }
+}
+
+/* End Responsive latest Projects in mobile */
+
+/* Page Profile in mobile */
+@media (max-width: 767px) {
+  .profile-user {
+    flex-direction: column;
+  }
+  .profile-user .info-box {
+    text-align: center;
+  }
+  .profile-user .info-box .box label {
+    text-align: -webkit-center;
+  }
+  .other-profile {
+    flex-direction: column;
+  }
+  .other-profile .my-skills .skill-row {
+    justify-content: center;
+  }
+  .latest-activities .activity-box {
+    flex-direction: column;
+  }
+  .latest-activities .activity-box .info p:first-child {
+    text-align: center;
+  }
+  .latest-activities .activity-box img {
+    margin-bottom: 10px;
+  }
+  .latest-activities .activity-box .info p:last-child {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .latest-activities .activity-box .time span:first-child {
+    text-align: center;
+  }
+}
+
+/* Start Settigns Widgets */
+@media (max-width: 767px) {
+  .settigns-page {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+  .settigns-page .controls {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+/* End Settigns Widgets */
+
+/* Start responsive backup widget */
+@media (max-width: 767px) {
+  .backup-manager .servers {
+    flex-wrap: wrap;
+  }
+}
+/* end responsive backup widget */
+/* end responsive Projects page */
+@media (max-width: 767px) {
+  .widgets {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .widgets .project .skill {
+    flex-direction: column;
+  }
+  .widgets .project .skill span {
+    width: fit-content;
+    margin: 0 0 10px;
+  }
+  .widgets .project .info {
+    flex-direction: column;
+  }
+  .widgets .project .info .prog {
+    margin-bottom: 7px;
+  }
+}
+/* end responsive Projects page */
+
+/* Start responsive page settings */
+@media (max-width: 767px) {
+  .courses-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* End responsive page settings */
+
+/* Start reponsive Friends in the Mobile */
+
+@media (max-width: 767px) {
+  .file-page {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
+
+/* End reponsive Friends in the Mobile */
+/* start reponsive plans in the Mobile */
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(250px,1fr);
+    gap: 10px;
+    margin: 0 10px;
+  }
+}
+/* End reponsive plans in the Mobile */

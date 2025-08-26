@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Main file css -->
+  <link rel="stylesheet" href="assets/css/profile.css" />
+  <!-- Responsive file css -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <!-- Active Responsive  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- Font Awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Profile HTML CSS</title>
+</head>
+
+<body>
+  <div class="sheet">
+    <div class="sidebar">
+      <h3 class="logo">Reda</h3>
+      <ul>
+        <li>
+          <a href="Dashboard.html">
+            <i class="fa-regular fa-chart-bar fa-fw"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="active">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span>Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="projects.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="courses.html">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span>Courses</span>
+          </a>
+        </li>
+        <li>
+          <a href="friends.html">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span>Friends</span>
+          </a>
+        </li>
+        <li>
+          <a href="files.html">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span>Files</span>
+          </a>
+        </li>
+        <li>
+          <a href="plans.html">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span>Plans</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <!-- Start Head -->
+      <div class="head">
+        <div class="search">
+          <i class="mag fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Tape A Keyword">
+        </div>
+        <div class="icons">
+          <span class="notification">
+            <i class="fa-regular fa-bell fa-lg"></i>
+          </span>
+          <img src="./assets/imgs/avatar.png" alt="avatar" width="40" />
+        </div>
+      </div>
+      <!-- End Head -->
+      <h1 class="main-title">profile</h1>
+      <!-- Start profile user -->
+      <div class="profile-user">
+        <div class="user">
+          <img src="./assets/imgs/avatar.png" alt="avatar" />
+          <h3>Reda Amjad</h3>
+          <p>20 Level</p>
+          <div class="progress-level">
+            <span style="width:70%"></span>
+          </div>
+          <div class="rating">
+            <i class="fa-solid fa-star c-orange"></i>
+            <i class="fa-solid fa-star c-orange"></i>
+            <i class="fa-solid fa-star c-orange"></i>
+            <i class="fa-solid fa-star c-orange"></i>
+            <i class="fa-solid fa-star c-orange"></i>
+          </div>
+          <p>550 Rating</p>
+        </div>
+        <div class="info-box">
+          <div class="box">
+            <h4>General Information</h4>
+            <div>
+              <span>FullName:</span>
+              <span>Reda Amjad</span>
+            </div>
+            <div>
+              <span>Gender:</span>
+              <span>Male</span>
+            </div>
+            <div>
+              <span>Country</span>
+              <span>Morocco</span>
+            </div>
+            <div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Personal Information</h4>
+            <div>
+              <span>E-mail:</span>
+              <span>o@nn.sa</span>
+            </div>
+            <div>
+              <span>Phone:</span>
+              <span>019123456789</span>
+            </div>
+            <div>
+              <span>Date Of Birth</span>
+              <span>25/10/1982</span>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Job Information</h4>
+            <div>
+              <span>Title</span>
+              <span>Full Stack Developer</span>
+            </div>
+            <div>
+              <span>Programming Language:</span>
+              <span>JavaScript</span>
+            </div>
+            <div>
+              <span>Years Of Experience:</span>
+              <span>15+</span>
+            </div>
+            <div>
+              <label>
+                <input class="toggle-checkbox" type="checkbox" checked />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Billing Information</h4>
+
+            <div>
+              <span>Payment Method:</span>
+              <span>Paypal</span>
+            </div>
+            <div>
+              <span>Email:</span>
+              <span>email@website.com</span>
+            </div>
+            <div>
+              <span>Subscription:</span>
+              <span>Monthly</span>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" class="toggle-checkbox" />
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End profile user -->
+      <!-- Start  skills  -->
+      <div class="other-profile">
+        <div class="my-skills">
+          <h2>My Skills</h2>
+          <p>Complete Skills List</p>
+          <div class="skill-row">
+            <span class="btn-shape">HTML</span>
+            <span class="btn-shape">PUGJS</span>
+            <span class="btn-shape">HAML</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">CSS</span>
+            <span class="btn-shape">SASS</span>
+            <span class="btn-shape">Stylus</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">JavaScript</span>
+            <span class="btn-shape">TypeScript</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">HTML</span>
+            <span class="btn-shape">PUGJS</span>
+            <span class="btn-shape">HAML</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">Vuejs</span>
+            <span class="btn-shape">Reactjs</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">Jest</span>
+            <span class="btn-shape">Jasmine</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">PHP</span>
+            <span class="btn-shape">Laravel</span>
+          </div>
+          <div class="skill-row">
+            <span class="btn-shape">Python</span>
+            <span class="btn-shape">Django</span>
+          </div>
+        </div>
+        <div class="latest-activities">
+          <h2>Latest Activities</h2>
+          <p class="description">Latest Activities Done By The User</p>
+          <div class="activity-box">
+            <img src="./assets/imgs/activity-01.png" alt="activity">
+            <div class="info">
+              <p>Store</p>
+              <p>Bought The Mastering Python Course</p>
+            </div>
+            <div class="time">
+              <span>18:10</span>
+              <span>Yesterday</span>
+            </div>
+          </div>
+          <div class="activity-box">
+            <img src="./assets/imgs/activity-02.png" alt="activity">
+            <div class="info">
+              <p>Academy</p>
+              <p>Got The PHP Certificate</p>
+            </div>
+            <div class="time">
+              <span>16:05</span>
+              <span>Yesterday</span>
+            </div>
+          </div>
+          <div class="activity-box">
+            <img src="./assets/imgs/activity-03.png" alt="activity">
+            <div class="info">
+              <p>Badges</p>
+              <p>Unlocked The 10 Skills Badge</p>
+            </div>
+            <div class="time">
+              <span>18:05</span>
+              <span>Yesterday</span>
+            </div>
+          </div>
+          <div class="activity-box">
+            <img src="./assets/imgs/activity-01.png" alt="activity">
+            <div class="info">
+              <p>Store</p>
+              <p>Bought The Typescript Course</p>
+            </div>
+            <div class="time">
+              <span>12:05</span>
+              <span>Yesterday</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End  skills  -->
+    </div>
+  </div>
+
+
+</body>
+
+</html>

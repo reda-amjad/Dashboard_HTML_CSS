@@ -1,0 +1,344 @@
+/* Import Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/*Start Global Rules*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+  --main-transition: 0.3s;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+/* End Global Rules*/
+/* Start Component */
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  position: relative;
+}
+
+.sidebar .logo::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 80px;
+  background: #000;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+.sidebar .logo::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  border-radius: 50%;
+  width: 12px;
+  transform: translateX(-50%);
+  height: 12px;
+  background-color: black;
+  border: 4px solid #fff;
+}
+
+.main-title {
+  font-size: 32px;
+  position: relative;
+  text-transform: capitalize;
+  margin: 20px 20px 40px;
+}
+
+.main-title::before,
+.main-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 3px;
+}
+.main-title::before {
+  width: 120px;
+  background-color: #fff;
+}
+.main-title::after {
+  width: 40px;
+  background-color: #000;
+}
+.btn-shape {
+  padding: 4px 10px;
+  border-radius: 6px;
+  display: block;
+  width: fit-content;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blue-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue-color);
+}
+/* End Component */
+/* Start sideBar*/
+.sheet {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+
+.sidebar {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 0px 10px #ddd;
+}
+
+.sidebar ul {
+  margin: 20px 0;
+}
+
+.sidebar ul li > a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  transition: var(--main-transition);
+}
+
+.sidebar ul li > a.active,
+.sidebar ul li > a:hover {
+  background-color: #f6f6f6;
+}
+
+.sidebar ul li > a span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #000;
+}
+.content {
+  width: 100%;
+  overflow: hidden;
+}
+/* End Side Bar */
+/* Start Head */
+.content .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  justify-content: space-between;
+}
+.content .head .search {
+  position: relative;
+}
+.content .head .search .mag {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--grey-color);
+}
+.content .head .search input {
+  padding: 10px;
+  border-radius: 6px;
+  padding-left: 30px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  width: 160px;
+  caret-color: var(--blue-color);
+  transition: var(--main-transition);
+}
+.content .head .search input:focus {
+  outline: none;
+  width: 200px;
+}
+.content .head .search input:focus::placeholder {
+  opacity: 0;
+}
+.content .head .icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .icons .notification {
+  position: relative;
+}
+.content .icons .notification::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -5px;
+  right: -5px;
+  background-color: var(--red-color);
+  border-radius: 50%;
+}
+.content .icons img {
+  width: 32px;
+  height: 32px;
+  margin-left: 15px;
+}
+/* End Head */
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin: 20px;
+  gap: 20px;
+}
+
+.widgets .project {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.widgets .project .date {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 13px;
+  color: var(--grey-color);
+}
+
+.widgets .project h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.widgets .project p {
+  font-size: 14px;
+  color: var(--grey-color);
+  margin: 10px 0;
+}
+
+.widgets .project .team {
+  position: relative;
+  min-height: 80px;
+}
+
+.widgets .project .team a {
+  position: absolute;
+  bottom:  0;
+  left: 0;
+}
+.widgets .project .team a:nth-child(2) {
+  left: 25px;
+}
+.widgets .project .team a:nth-child(3) {
+  left: 50px;
+}
+.widgets .project .team a:nth-child(4) {
+  left: 75px;
+}
+.widgets .project .team a:nth-child(5) {
+  left: 100px;
+}
+.widgets .project .team a:hover {
+  z-index: 1000;
+}
+
+.widgets .project .team img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+}
+
+.widgets .project .skill {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.widgets .project .skill span {
+  font-size: 13px;
+  padding: 3px 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  margin-left: 5px;
+  background-color: #eee;
+}
+
+.widgets .project .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.widgets .project .info .prog {
+  position: relative;
+  height: 8px;
+  width: 260px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+.widgets .project .info .prog span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 6px;
+  background-color: var(--red-color);
+}
+
+.widgets .project .info .price {
+  color: var(--grey-color);
+  font-size: 13px;
+}
+.widgets .project .info .prog span.green {
+  background-color: var(--green-color);
+}
+.widgets .project .info .prog span.blue {
+  background-color: var(--blue-color);
+}
