@@ -47,6 +47,10 @@
   .wrapper .intro .image {
     display: none;
   }
+  .latest-news .info h3 {
+    text-align: center;
+    margin-top: 6px;
+  }
 }
 
 /* Start Responsive quicks Draft in Mobile */
